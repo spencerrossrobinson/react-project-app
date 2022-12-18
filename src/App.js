@@ -10,7 +10,7 @@ import DirectoryPage from "./pages/DirectoryPage";
 
 function App() {
   return (
-    <div className="App bg-gray-100 min-h-screen">
+    <div className="App bg-gray-100 min-h-screen grid grid-cols-3">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

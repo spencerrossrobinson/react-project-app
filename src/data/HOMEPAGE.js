@@ -1,26 +1,24 @@
-const homePageNav = [
+import startDrinkImg from "../app/assets/barHomePage.jpeg";
+import bartenderImg from "../app/assets/bartender.jpeg";
+import menuImg from "../app/assets/menu.jpeg";
+
+export const HOMECARD = [
   {
     id: 0,
-    name: "Welcome to the Best Bar Finder!",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariat",
+    name: "Start Drinking!",
+    image: startDrinkImg,
+    description: "#drinkingwithThirsty",
   },
   {
     id: 1,
-    name: "You dont want to miss this Shit",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariat",
+    name: "Send us Your Bar",
+    image: menuImg,
+    description: "#Thirstybar",
   },
   {
     id: 2,
-    name: "Not sure if this will work!",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariat",
-  },
-  {
-    id: 3,
-    name: "Not sure if this will work!",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariat",
+    name: "Bartender's Choice",
+    image: bartenderImg,
+    description: "#tellmewhattodrink",
   },
 ];

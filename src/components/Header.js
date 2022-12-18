@@ -6,11 +6,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", link: "/", id: 0, current: true },
-  { name: "About", link: "/about", id: 1, current: false },
-  { name: "Directory", link: "/directory", id: 2, current: false },
-  { name: "Random", link: "/random", id: 3, current: false },
-  { name: "Contact", link: "/contact", id: 4, current: false },
+  { name: "Drink", link: "/", id: 0, current: false },
+  { name: "Random", link: "/random", id: 1, current: false },
+  { name: "Contact", link: "/contact", id: 2, current: false },
 ];
 
 function classNames(...classes) {
@@ -19,7 +17,10 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-violet-800">
+    <Disclosure
+      as="nav"
+      className="bg-violet-800 col-span-1 md:flex md:justify-end"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -48,11 +49,12 @@ export default function Header() {
                     alt="Your Company"
                   />
                 </div>
-                <div className="text-violet-300 m-6">Bars.</div>
+                <div className="text-violet-300 m-6">Thirsty.</div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-6 m-4">
                     {navigation.map((item) => (
                       <Link
+                        onClick={item.current === true}
                         key={item.id}
                         to={item.link}
                         className={classNames(
