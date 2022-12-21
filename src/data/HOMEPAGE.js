@@ -1,4 +1,4 @@
-import startDrinkImg from "../app/assets/barHomePage.jpeg";
+import startDrinkImg from "../app/assets/spanishGinAndTonic.jpeg";
 import bartenderImg from "../app/assets/bartender.jpeg";
 import menuImg from "../app/assets/menu.jpeg";
 
@@ -11,14 +11,14 @@ export const HOMECARD = [
   },
   {
     id: 1,
-    name: "Send us Your Bar",
-    image: menuImg,
-    description: "#Thirstybar",
-  },
-  {
-    id: 2,
     name: "Bartender's Choice",
     image: bartenderImg,
     description: "#tellmewhattodrink",
+  },
+  {
+    id: 2,
+    name: "Send us Your Bar",
+    image: menuImg,
+    description: "#Thirstybar",
   },
 ];

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const HomeCard = ({ card }) => {
+const FranceCard = ({ card }) => {
   const { id, image, name, description } = card;
   return (
     <Link to={`${id}`}>
@@ -27,4 +27,4 @@ const HomeCard = ({ card }) => {
   );
 };
 
-export default HomeCard;
+export default FranceCard;

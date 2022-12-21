@@ -4,9 +4,9 @@ import { selectAllCard } from "../slice/homeCardSlice";
 const HomePage = () => {
   const cards = selectAllCard();
   return (
-    <div className="col-span-2">
+    <div className="col-span-5">
       <div>
-        <h4 className="text-gray-700 text-4xl font-semibold leading-none tracking-wider">
+        <h4 className="text-gray-700 text-4xl font-semibold leading-none tracking-wider mt-20">
           Begin Your Drinking Journey Here
         </h4>
       </div>

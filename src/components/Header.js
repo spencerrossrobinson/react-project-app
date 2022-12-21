@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="md:col-span-1 md:flex md:justify-end">
+    <div className="md:col-span-1 md:flex md:justify-end bg-violet-200">
       <nav className="text-right">
         <div className="flex justify-between items-center">
           <h1 className="font-bold uppercase p-4 border-b border-gray-100">
             <Link to="/">
-              <div className="hover:text-gray-700 tracking-widest">
+              <div className="hover:text-gray-600 tracking-widest">
                 Thirsty.
               </div>
             </Link>
@@ -23,14 +23,14 @@ const Header = () => {
           </div>
           <div className="py-1">
             <Link to="/random">
-              <div className="block px-4 flex justify-end border-r-4 border-white">
+              <div className="mt-3 block px-4 flex justify-end border-r-4 border-white">
                 Random
               </div>
             </Link>
           </div>
           <div className="py-1">
             <Link to="/contact">
-              <div className="block px-4 flex justify-end border-r-4 border-white">
+              <div className="mt-3 block px-4 flex justify-end border-r-4 border-white">
                 Contact
               </div>
             </Link>
