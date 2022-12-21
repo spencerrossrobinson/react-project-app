@@ -1,6 +1,6 @@
 import { HOMECARD } from "../data/HOMEPAGE";
 
-export const selectCardById = (id) => {
+export const selectHomeById = (id) => {
   return HOMECARD.find((card) => card.id === parseInt(id));
 };
 

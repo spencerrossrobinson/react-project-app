@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/0" element={<DirectoryPage />} />
-        <Route path="/0/0" element={<FrancePage />} />
-        <Route path="/1" element={<ContactPage />} />
-        <Route path="random" element={<RandomPage />} />
+        <Route path="/:homeId" element={<DirectoryPage />} />
+        <Route path="/:homeId/:worldId" element={<FrancePage />} />
+        <Route path="/2" element={<ContactPage />} />
+        <Route path="/1" element={<RandomPage />} />
         <Route path="about" element={<AboutPage />} />
       </Routes>
     </div>
