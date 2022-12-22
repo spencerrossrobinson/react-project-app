@@ -8,6 +8,8 @@ import ContactPage from "./pages/ContactPage";
 import RandomPage from "./pages/RandomPage";
 import DirectoryPage from "./pages/DirectoryPage";
 import FrancePage from "./pages/FrancePage";
+import ParisPage from "./pages/ParisPage";
+import LittleRedDoor from "./bars/LittleRedDoor";
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:homeId" element={<DirectoryPage />} />
-        <Route path="/:homeId/:worldId" element={<FrancePage />} />
+        <Route path="/0" element={<DirectoryPage />} />
+        <Route path="/0/0" element={<FrancePage />} />
+        <Route path="/0/0/0" element={<ParisPage />} />
+        <Route path="/0/0/0/0" element={<LittleRedDoor />} />
         <Route path="/2" element={<ContactPage />} />
         <Route path="/1" element={<RandomPage />} />
         <Route path="about" element={<AboutPage />} />

@@ -1,21 +1,21 @@
-import { selectAllWorldCard } from "../slice/worldCardSlice";
-import WorldCard from "./WorldCard";
+import { selectAllParisCard } from "../slice/parisSliceCard";
+import ParisCard from "./WorldCard";
 
-const WorldList = () => {
-  const cards = selectAllWorldCard();
+const ParisList = () => {
+  const cards = selectAllParisCard();
 
   return (
     <div className="col-span-5">
       <div>
         <h4 className="text-gray-700 text-4xl font-semibold leading-none tracking-wider mt-20">
-          Where Are We Going?
+          Lets Find Your Bar!
         </h4>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3">
         {cards.map((card) => {
           return (
             <div key={card.id}>
-              <WorldCard card={card} className="row-span-full" />
+              <ParisCard card={card} className="row-span-full" />
             </div>
           );
         })}
@@ -24,4 +24,4 @@ const WorldList = () => {
   );
 };
 
-export default WorldList;
+export default ParisList;
