@@ -1,5 +1,5 @@
 import FranceImg from "../app/assets/eiffelTower.jpeg";
-import EnglandImg from "../app/assets/england.jpeg";
+import SpainImg from "../app/assets/spain.jpeg";
 import NewYorkImg from "../app/assets/newYork.jpeg";
 
 export const WORLDCARD = [
@@ -17,8 +17,8 @@ export const WORLDCARD = [
   },
   {
     id: 2,
-    name: "England",
-    image: EnglandImg,
-    description: "#ThirstyInEngland",
+    name: "Spain",
+    image: SpainImg,
+    description: "#ThirstyInSpain",
   },
 ];

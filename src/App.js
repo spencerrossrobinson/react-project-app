@@ -9,6 +9,8 @@ import RandomPage from "./pages/RandomPage";
 import DirectoryPage from "./pages/DirectoryPage";
 import FrancePage from "./pages/FrancePage";
 import ParisPage from "./pages/ParisPage";
+import SpainPage from "./pages/SpainPage";
+import BarcelonaPage from "./pages/BarcelonaPage";
 import LittleRedDoor from "./bars/LittleRedDoor";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/0/0/0/0" element={<LittleRedDoor />} />
         <Route path="/2" element={<ContactPage />} />
         <Route path="/1" element={<RandomPage />} />
+        <Route path="/0/2" element={<SpainPage />} />
+        <Route path="/0/2/0" element={<BarcelonaPage />} />
         <Route path="about" element={<AboutPage />} />
       </Routes>
     </div>
