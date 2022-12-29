@@ -22,14 +22,14 @@ const Header = () => {
             </Link>
           </div>
           <div className="py-1">
-            <Link to="/random">
+            <Link to="/1">
               <div className="mt-3 block px-4 flex justify-end border-r-4 border-white">
                 Random
               </div>
             </Link>
           </div>
           <div className="py-1">
-            <Link to="/contact">
+            <Link to="/2">
               <div className="mt-3 block px-4 flex justify-end border-r-4 border-white">
                 Contact
               </div>

@@ -1,8 +1,8 @@
-import { selectAllParisCard } from "../slice/parisSliceCard";
+import { selectAllYorkCard } from "../slice/allSlice";
 import ParisCard from "./ParisCard";
 
-const ParisList = () => {
-  const cards = selectAllParisCard();
+const YorkList = () => {
+  const cards = selectAllYorkCard();
 
   return (
     <div className="col-span-5">
@@ -24,4 +24,4 @@ const ParisList = () => {
   );
 };
 
-export default ParisList;
+export default YorkList;

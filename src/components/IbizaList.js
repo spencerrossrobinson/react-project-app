@@ -1,8 +1,8 @@
-import { selectAllParisCard } from "../slice/parisSliceCard";
-import ParisCard from "./ParisCard";
+import { selectAllIbizaCard } from "../slice/allSlice";
+import NewCard from "./NewCard";
 
-const ParisList = () => {
-  const cards = selectAllParisCard();
+const IbizaList = () => {
+  const cards = selectAllIbizaCard();
 
   return (
     <div className="col-span-5">
@@ -15,7 +15,7 @@ const ParisList = () => {
         {cards.map((card) => {
           return (
             <div key={card.id}>
-              <ParisCard card={card} className="row-span-full" />
+              <NewCard card={card} className="row-span-full" />
             </div>
           );
         })}
@@ -24,4 +24,4 @@ const ParisList = () => {
   );
 };
 
-export default ParisList;
+export default IbizaList;

@@ -1,5 +1,11 @@
+import RandomHeader from "../components/RandomHeader";
+
 const RandomPage = () => {
-  return <div>Random Page</div>;
+  return (
+    <>
+      <RandomHeader />
+    </>
+  );
 };
 
 export default RandomPage;

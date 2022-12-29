@@ -1,4 +1,4 @@
-import { USACARD } from "../data/USACARD";
+import { USACARD } from "../data/USAPAGE";
 
 export const selectAllUsaCard = () => {
   return USACARD;
