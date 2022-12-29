@@ -9,6 +9,7 @@ const RandomHeader = () => {
   const [visible, setVisible] = useState(2);
 
   const cards = selectAllCard();
+  const randomCard = "1/" + Math.floor(Math.random() * 14);
 
   const loadMore = () => {
     setVisible(visible + 2);
@@ -29,7 +30,7 @@ const RandomHeader = () => {
               Accusantium consequatur.
             </p>
             <a
-              href=""
+              href={randomCard}
               type="submit"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
@@ -40,22 +41,7 @@ const RandomHeader = () => {
           </div>
         </div>
       </div>
-      {/* <div className="w-5/6 mx-auto">
-        <div className="grid grid-cols-10">
-          <div className="z-40 container row-span-full col-start-1 col-span-6 self-center bg-violet-200 rounded-xl shadow border p-8 m-20">
-            <p className="text-3xl text-gray-700 font-bold mb-5 flex justify-center">
-              Welcome to the Best Bars in the World!
-            </p>
-            <p className="text-gray-500 text-lg">
-              React and Tailwind CSS in action
-            </p>
-          </div>
-          <div className="z-0 container row-span-full col-start-5 col-span-11 self-center bg-violet-400 rounded-xl shadow border p-5 m-10 h-80">
-            <img src={BarHome} alt="" className="h-70 rounded-xl" />
-          </div>
-        </div>
-      </div> */}
-      <div className="grid grid-cols-1 lg:grid-cols-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3 pb-10 mt-5">
         {cards.map((card) => {
           return (
             <div key={card.id}>

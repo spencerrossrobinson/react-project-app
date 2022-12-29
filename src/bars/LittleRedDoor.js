@@ -1,4 +1,5 @@
 import LittleImg from "../app/assets/littleRed.jpeg";
+const randomCard = Math.floor(Math.random() * 14);
 
 const LittleRedDoor = () => {
   return (
@@ -31,6 +32,15 @@ const LittleRedDoor = () => {
             #StayThirsty
           </span>
         </div>
+        <a
+          href={randomCard}
+          type="submit"
+          data-mdb-ripple="true"
+          data-mdb-ripple-color="light"
+          class="inline-block px-6 py-2.5 border-2 border-slate-100 text-violet-900 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-slate-200 hover:shadow-lg focus:bg-slate-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-400 active:shadow-lg transition duration-150 ease-in-out mt-5"
+        >
+          Find me Another Bar
+        </a>
       </div>
     </div>
   );

@@ -1,14 +1,14 @@
-import LittleImg from "../app/assets/prescription.jpeg";
+import LittleImg from "../app/assets/roosevelt.jpeg";
 const randomCard = Math.floor(Math.random() * 14);
 
-const PrescClub = () => {
+const Roose = () => {
   return (
     <div className="col-span-5 mx-auto my-auto">
       <div className="rounded-lg overflow-hidden shadow-xl w-3/5 m-5 mx-auto my-auto bg-violet-400 p-4 hover:scale-110 transition duration-500 ease-in-out">
         <img className="w-full" src={LittleImg} alt="Little Red Door" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">
-            Prescription Cocktail Club - Paris - $$
+            Roosevelt Hotel - New Orleans - $$$
           </div>
           <p className="text-gray-900">
             &#9733; &#9733; &#9733; &#9733; &#9733;
@@ -23,10 +23,10 @@ const PrescClub = () => {
         </div>
         <div className="px-6 pt-4 pb-2">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #ThirstyPrescription
+            #RooseveltHotel
           </span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #ThirstyInParis
+            #ThirstyInOrleans
           </span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
             #StayThirsty
@@ -46,4 +46,4 @@ const PrescClub = () => {
   );
 };
 
-export default PrescClub;
+export default Roose;

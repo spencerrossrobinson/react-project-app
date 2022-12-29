@@ -5,7 +5,7 @@ const Contact = () => {
     <>
       <div className="col-span-5 mx-auto my-auto">
         <div>
-          <h4 className="text-gray-700 text-4xl font-semibold leading-none tracking-wider mb-10">
+          <h4 className="text-gray-700 text-4xl font-semibold leading-none tracking-wider mb-10 bg-violet-300 p-5 rounded-lg">
             Send Us Your Bar!
           </h4>
         </div>
@@ -24,7 +24,7 @@ const Contact = () => {
             >
               <Form className="px-6 py-4">
                 <div className=" grid grid-cols-4 pb-3 pt-5">
-                  <label htmlFor="phoneNum" className="col-span-2">
+                  <label htmlFor="phoneNum" className="col-span-2 mr-16">
                     Phone:
                   </label>
                   <Field
@@ -34,7 +34,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="py-3 grid grid-cols-4">
-                  <label htmlFor="firstName" className="col-span-2">
+                  <label htmlFor="firstName" className="col-span-2 mr-16">
                     First Name:
                   </label>
                   <Field
@@ -44,7 +44,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="py-3 grid grid-cols-4">
-                  <label htmlFor="lastName" className="col-span-2">
+                  <label htmlFor="lastName" className="col-span-2 mr-16">
                     Last Name:
                   </label>
                   <Field
@@ -54,7 +54,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="py-3 grid grid-cols-4">
-                  <label htmlFor="barName" className="col-span-2">
+                  <label htmlFor="barName" className="col-span-2 mr-16">
                     Bar Name:
                   </label>
                   <Field
@@ -64,7 +64,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="py-3 grid grid-cols-4">
-                  <label htmlFor="description" className="col-span-4">
+                  <label htmlFor="description" className="col-span-4 pb-5">
                     Description of Your Bar:
                   </label>
                   <Field
